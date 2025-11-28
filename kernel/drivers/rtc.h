@@ -1,0 +1,16 @@
+#ifndef RTC_H
+#define RTC_H
+
+typedef struct {
+    uint8_t second;
+    uint8_t minute;
+    uint8_t hour;
+    uint8_t day;
+    uint8_t month;
+    uint16_t year;
+} rtc_time_t;
+
+void rtc_get_time(rtc_time_t* time);
+void rtc_set_time(rtc_time_t* time);
+
+#endif
